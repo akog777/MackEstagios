@@ -1,0 +1,16 @@
+.container{max-width:980px;margin:20px auto;padding:20px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial}
+.backBtn{display:inline-block;margin-bottom:12px;padding:8px 12px;background:#f0f0f0;color:#333;text-decoration:none;border-radius:6px}
+.pageTitle{margin-bottom:12px;color:#333}
+.form{display:flex;gap:8px;margin-bottom:16px}
+.form input{flex:1;padding:8px;border:1px solid #ddd;border-radius:6px}
+.saveBtn{background:#0070f3;color:white;border:none;padding:8px 12px;border-radius:6px;cursor:pointer}
+.cancelBtn{background:#f44336;color:white;border:none;padding:8px 12px;border-radius:6px;cursor:pointer}
+.list{display:flex;flex-direction:column;gap:10px}
+.item{display:flex;justify-content:space-between;align-items:center;padding:12px;border:1px solid #eee;border-radius:8px;background:white}
+.title{font-weight:700}
+.desc{color:#666;font-size:13px;margin-top:4px}
+.actions{display:flex;gap:8px}
+.editBtn{background:#ffb300;border:none;padding:8px 10px;border-radius:6px;cursor:pointer;color:white}
+.deleteBtn{background:#e53935;border:none;padding:8px 10px;border-radius:6px;cursor:pointer;color:white}
+.error{background:#ffebee;color:#c62828;padding:10px;border-radius:6px;margin-bottom:12px}
+@media(max-width:600px){.form{flex-direction:column}.actions{gap:6px}}

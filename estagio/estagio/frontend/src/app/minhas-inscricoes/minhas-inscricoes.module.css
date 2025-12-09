@@ -1,0 +1,252 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.backBtn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background-color: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.backBtn:hover {
+  background-color: #e0e0e0;
+}
+
+.header {
+  margin-bottom: 30px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 15px;
+}
+
+.header h1 {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-size: 28px;
+}
+
+.subtitle {
+  margin: 0;
+  color: #999;
+  font-size: 14px;
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 16px;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #ffebee;
+  border-radius: 5px;
+}
+
+/* Empty State */
+.emptyState {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 40px 0;
+}
+
+.emptyIcon {
+  font-size: 64px;
+  display: block;
+  margin: 0 0 20px 0;
+}
+
+.emptyState h2 {
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.emptyState p {
+  color: #999;
+  margin: 0 0 20px 0;
+}
+
+.actionBtn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0070f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.actionBtn:hover {
+  background-color: #0051cc;
+}
+
+/* Inscrições List */
+.inscricoesList {
+  display: grid;
+  gap: 20px;
+}
+
+.inscricaoCard {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.inscricaoCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #fafafa;
+  gap: 15px;
+}
+
+.titleSection {
+  flex: 1;
+}
+
+.vagaTitulo {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.empresa {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.statusIcon {
+  font-size: 16px;
+}
+
+.statusText {
+  text-transform: capitalize;
+}
+
+.statusAprovado {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.statusRejeitado {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.statusPendente {
+  background-color: #fff3e0;
+  color: #e65100;
+}
+
+.cardBody {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.infoRow {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.label {
+  font-weight: 600;
+  color: #666;
+  min-width: 140px;
+  flex-shrink: 0;
+}
+
+.value {
+  color: #333;
+  flex: 1;
+  word-break: break-word;
+}
+
+.cardFooter {
+  padding: 15px 20px;
+  background-color: #fafafa;
+  border-top: 1px solid #f0f0f0;
+  display: flex;
+  gap: 10px;
+}
+
+.detailsBtn {
+  flex: 1;
+  padding: 10px 15px;
+  background-color: #0070f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.detailsBtn:hover {
+  background-color: #0051cc;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 22px;
+  }
+
+  .cardHeader {
+    flex-direction: column;
+  }
+
+  .status {
+    align-self: flex-start;
+  }
+
+  .infoRow {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .label {
+    min-width: auto;
+  }
+}

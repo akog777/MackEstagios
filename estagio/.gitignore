@@ -1,0 +1,36 @@
+# Java
+/target/
+*.class
+
+# Maven
+.mvn/
+/.idea/
+
+# H2 database files
+/estagio/data/*.mv.db
+/estagio/data/*.trace.db
+
+# Node
+/node_modules/
+/estagio/frontend/node_modules/
+
+# Next build
+/estagio/frontend/.next/
+
+# Logs
+*.log
+/*.log
+
+# OS
+.DS_Store
+
+# Env
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# Git
+.DS_Store

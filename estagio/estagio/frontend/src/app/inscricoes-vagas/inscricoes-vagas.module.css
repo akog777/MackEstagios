@@ -1,0 +1,363 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.backBtn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background-color: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.backBtn:hover {
+  background-color: #e0e0e0;
+}
+
+.header {
+  margin-bottom: 30px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 15px;
+}
+
+.header h1 {
+  margin: 0;
+  color: #333;
+  font-size: 28px;
+}
+
+.error {
+  color: #d32f2f;
+  background-color: #ffebee;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+  font-size: 16px;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.emptyState p {
+  margin: 0 0 20px 0;
+  color: #999;
+  font-size: 16px;
+}
+
+.ctaBtn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0070f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.ctaBtn:hover {
+  background-color: #0051cc;
+}
+
+/* Vagas Container */
+.vagasContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vagaCard {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vagaHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.vagaHeader h2 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+  flex: 1;
+}
+
+.aberta,
+.encerrada {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.aberta {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.encerrada {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.inscCount {
+  margin-bottom: 15px;
+  color: #666;
+  font-size: 14px;
+}
+
+.inscCount strong {
+  color: #0070f3;
+  font-size: 16px;
+}
+
+.noInscricoes {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Table Styles */
+.inscTable {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tableHeader,
+.tableRow {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr 1.5fr;
+  gap: 15px;
+  padding: 12px 0;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.tableHeader {
+  background-color: #f5f5f5;
+  padding: 12px 0;
+  font-weight: 600;
+  color: #666;
+  font-size: 12px;
+  border-bottom: 2px solid #ddd;
+}
+
+.tableRow:last-child {
+  border-bottom: none;
+}
+
+.tableRow:hover {
+  background-color: #fafafa;
+}
+
+.colNome,
+.colEmail,
+.colData,
+.colStatus,
+.colAcoes {
+  font-size: 14px;
+}
+
+.colEmail a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.colEmail a:hover {
+  text-decoration: underline;
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.aprovado {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.rejeitado {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.pendente {
+  background-color: #fff3e0;
+  color: #e65100;
+}
+
+.statusSelect {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: white;
+  transition: border-color 0.3s;
+}
+
+.statusSelect:hover {
+  border-color: #0070f3;
+}
+
+.statusSelect:focus {
+  outline: none;
+  border-color: #0070f3;
+  box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .tableHeader,
+  .tableRow {
+    grid-template-columns: 1.5fr 1.5fr 1.5fr 1fr 1.5fr;
+    gap: 10px;
+  }
+
+  .colEmail,
+  .colData {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .vagaCard {
+    padding: 15px;
+  }
+
+  .tableHeader,
+  .tableRow {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+  }
+
+  .colEmail {
+    display: none;
+  }
+
+  .tableHeader > div:nth-child(2) {
+    display: none;
+  }
+
+  .tableRow > div:nth-child(2) {
+    display: none;
+  }
+
+  .colData {
+    font-size: 11px;
+  }
+
+  .statusSelect {
+    font-size: 11px;
+    padding: 4px 6px;
+  }
+
+  .vacardHeader {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .vagaHeader h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tableHeader {
+    display: none;
+  }
+
+  .tableRow {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #f9f9f9;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+  }
+
+  .colNome,
+  .colEmail,
+  .colData,
+  .colStatus,
+  .colAcoes {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .colNome::before {
+    content: 'Nome: ';
+    font-weight: 600;
+    color: #666;
+  }
+
+  .colEmail::before {
+    content: 'Email: ';
+    font-weight: 600;
+    color: #666;
+  }
+
+  .colData::before {
+    content: 'Data: ';
+    font-weight: 600;
+    color: #666;
+  }
+
+  .colStatus::before {
+    content: 'Status: ';
+    font-weight: 600;
+    color: #666;
+  }
+
+  .colAcoes::before {
+    content: 'Ação: ';
+    font-weight: 600;
+    color: #666;
+  }
+
+  .statusSelect {
+    flex: 1;
+  }
+}

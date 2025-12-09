@@ -1,0 +1,52 @@
+{
+  "name": "Portal de Estágios - Java 17 + Node",
+  "image": "mcr.microsoft.com/devcontainers/java:17-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "nodeVersion": "18"
+    },
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "remoteUser": "root",
+  "postCreateCommand": "cd /workspaces/ProjetoJPA/estagio/frontend && npm install && npm cache clean --force",
+  "forwardPorts": [8080, 3000, 3001, 3002],
+  "portsAttributes": {
+    "8080": {
+      "label": "Backend (Spring Boot)",
+      "onAutoForward": "notify"
+    },
+    "3000": {
+      "label": "Frontend (Next.js)",
+      "onAutoForward": "notify"
+    },
+    "3001": {
+      "label": "Frontend Alt",
+      "onAutoForward": "notify"
+    },
+    "3002": {
+      "label": "Frontend Alt 2",
+      "onAutoForward": "notify"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Extension.vscode-theme-onedark-pro",
+        "ms-vscode.extension-pack-for-java",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "java.version": "17",
+        "maven.pomfile.autoUpdateOnBuild": true,
+        "[json]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
+      }
+    }
+  }
+}

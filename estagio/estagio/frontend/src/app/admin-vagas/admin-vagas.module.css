@@ -1,0 +1,14 @@
+.container{max-width:980px;margin:20px auto;padding:20px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial}
+.backBtn{display:inline-block;margin-bottom:12px;padding:8px 12px;background:#f0f0f0;color:#333;text-decoration:none;border-radius:6px}
+.pageTitle{margin-bottom:12px;color:#333}
+.list{display:flex;flex-direction:column;gap:10px}
+.item{display:flex;justify-content:space-between;align-items:center;padding:12px;border:1px solid #eee;border-radius:8px;background:white}
+.title{font-weight:700}
+.meta{color:#666;font-size:13px}
+.actions{display:flex;gap:8px;align-items:center}
+.encerrarBtn{background:#ff9800;color:white;border:none;padding:8px 10px;border-radius:6px;cursor:pointer}
+.deleteBtn{background:#e53935;color:white;border:none;padding:8px 10px;border-radius:6px;cursor:pointer}
+.closed{background:#f3f3f3;padding:6px 10px;border-radius:6px;color:#777;font-weight:600}
+.error{background:#ffebee;color:#c62828;padding:10px;border-radius:6px;margin-bottom:12px}
+.empty{padding:20px;background:#fafafa;border-radius:6px;color:#666}
+@media(max-width:600px){.actions{gap:6px}}
